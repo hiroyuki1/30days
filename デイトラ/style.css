@@ -1,0 +1,182 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0 20px 10px 20px;
+    margin: 0;
+}
+header li {
+    padding: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.top {
+    background-image: url(img/main-vsual-nontitle.png);
+    width: 100%;
+    height:600px;
+    text-align: center;
+}
+.top h1 {
+    padding-top: 200px;
+    font-size: 40px;
+}
+.top p {
+    margin: 0 auto;
+    text-align: center;
+    overflow-wrap: normal;
+    width:350px;
+}
+#about {
+    padding:100px 5% 0 5%;
+}
+#about h1 {  
+    text-align: center;
+    padding-bottom: 20px;
+}
+#about img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+#about p {
+    text-align:left;
+    margin: 0 auto;
+    width: 90%;
+}
+#courses {
+    padding:100px 5% 0 5%;
+}
+#courses h1 {  
+    text-align: center;
+    padding-bottom: 20px;
+}
+#courses ul {
+    list-style: none;
+    padding-left: 0;
+}
+li>img {
+    width: 100%;
+}
+#courses p {
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+#contact {
+    padding:80px 5% 0 5%;
+}
+#contact h1 {  
+    text-align: center;
+    padding-bottom: 20px;
+}
+#contact p {
+    text-align: center;
+}
+#contact>input {
+    border-radius: 20px;
+    margin: 0 auto 15px;
+    line-height: 2.5;
+    position: relative;
+    left: 50%;
+    transform : translate(-50%);
+    border: 1px solid gray;
+
+}
+#contact > button {
+    display:block;
+    text-align: center;
+    margin: 0 auto 100px;
+    cursor: pointer;
+    background-color: pink;
+    padding: 15px 20px;
+    border: none;
+    width:350px;
+
+}
+button > p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0;
+}
+footer {
+    height: 50px;
+    width: 100%;
+    border-top:1px solid gray;
+}
+footer > p {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 2px;
+}
+@media screen and (min-width:670px) {
+    .head {
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        height:50px;   
+    }
+    .head > h1{
+        padding-left: 10%;
+        padding-top: 20px;
+        font-size: 23px;
+    }
+    .head > ul {
+        padding-top: 25px;
+    }
+    .top {
+        height:400px;
+    }
+    .top h1 {
+        padding-top: 100px;
+    }
+    #about {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #about img {
+        width: 50%;
+    }
+    .contents {
+        display: flex;
+    }
+    .contents img {
+        margin-right: 20px;
+    }
+    #courses {
+        width:80%;
+        margin: 0 auto;
+    }
+    #courses ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        width: calc(33%-20px);
+    }
+    #courses .li:not(:first-child) {
+        margin-left: 20px;
+    }
+    #contact input {
+        width:450px;
+    }
+    #contact p {
+        margin-bottom: 0; 
+    }
+    #contact h1 {
+        padding-bottom: 10px;
+    }
+}
